@@ -99,7 +99,7 @@ Item {
     GroupBox {
         id: grpbox
         y: attachtext.y + 50
-        width: 350
+        width: 200
 
         title: "Select Type Of Sending Email Method"
         Row {
@@ -115,7 +115,7 @@ Item {
             }
             RadioButton {
                 id: radioButton2b
-                text: "Using EML file\n (This supports attachment on Dekstop)"
+                text: "Using EML file"
                 onClicked:{
                     currentIndex =-1
                     currentIndex = 1
@@ -130,7 +130,7 @@ Item {
         text: "Open Default Mail Client"
         height: 30
 
-        y: grpbox.y +75
+        y: grpbox.y +100
         onClicked: {
 
             launchStatus =  mainwindow.launchClient(totext.text,subtext.text,bodytext.text,radioButton2a.checked);
